@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Rubik", sans-serif;
+}
+
+.gotopbtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #838383;
+  bottom: 40px;
+  right: 50px;
+
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
+  opacity: 0.4;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  min-height: 2px;
+}
+.header img {
+  height: 60px;
+}
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.header ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.header li {
+  margin: 0 10px;
+}
+
+.header li a:hover {
+  background-color: rgb(175, 175, 175);
+}
+
+/*.header li a:active {
+  background-color: blue;
+} */
+
+.banner {
+  background: url(../imgs/painelsolar.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+  text-align: center;
+}
+.banner h1 {
+  margin: 0;
+  padding: 20px;
+  background-color: white;
+}
+#sobre-section,
+#contato-section {
+  padding: 20px;
+}
+
+#sobre-section p,
+#contato-section p {
+  font-size: 22px;
+}
+
+footer {
+  background-color: rgb(245, 245, 245);
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.footer-item {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+#footer-bottom {
+  text-align: center;
+  padding: 10px;
+}
+
+@media (max-width: 600px) {
+  /* estilos para telas menores que 600px (dispositivos móveis) */
+  .header {
+    flex-direction: column;
+  }
+  .header img {
+    margin-bottom: 10px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header li {
+    margin: 5px 0;
+  }
+
+  .footer-item {
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  /* estilos para telas entre 601px e 900px (tablets) */
+  .header {
+    padding: 20px;
+  }
+
+  .header img {
+    margin-bottom: 10px;
+  }
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header li {
+    margin: 5px 0;
+  }
+
+  .footer-item {
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: 901px) {
+  /* estilos para telas maiores que 901px (desktops) */
+  .header {
+    padding: 30px;
+  }
+
+  .header img {
+    margin-bottom: 10px;
+  }
+
+  .footer-item {
+    flex-basis: 100%;
+  }
+}
